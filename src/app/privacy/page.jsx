@@ -23,7 +23,7 @@ const PrivacyPage = () => {
       content: `We collect information that you provide directly to us, including:
         • Name and contact information
         • Communication preferences
-        • Inquiries about our Maine Coons
+        • Inquiries about our Irish Wolfhound puppies
         • Application and screening information
         • Payment information when applicable
         
@@ -34,10 +34,10 @@ const PrivacyPage = () => {
       title: "How We Use Your Information",
       content: `We use the collected information to:
         • Process your inquiries and applications
-        • Communicate with you about our cats
+        • Communicate with you about our dogs
         • Improve our services and website
-        • Send updates about available kittens or important announcements
-        • Ensure the safety and well-being of our cats
+        • Send updates about available puppies or important announcements
+        • Ensure the safety and well-being of our Irish Wolfhounds
         • Comply with legal obligations`,
     },
     {
@@ -115,7 +115,7 @@ const PrivacyPage = () => {
           </h1>
           <p className="text-xl text-center text-emerald-100 max-w-3xl">
             How we protect and handle your information while you explore our
-            Maine Coon services
+            Irish Wolfhound services
           </p>
         </div>
       </div>
@@ -183,10 +183,10 @@ const PrivacyPage = () => {
                 </h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                At Maine Coon Cattery, we take your privacy seriously. This
+                At Tariq's Irish Wolfhound Puppies, we take your privacy seriously. This
                 Privacy Policy describes how we collect, use, and protect your
                 personal information when you interact with our website or
-                services related to our Maine Coon breeding program. By using
+                services related to our Irish Wolfhound breeding program. By using
                 our services, you agree to the collection and use of information
                 in accordance with this policy.
               </p>

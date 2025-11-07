@@ -22,25 +22,25 @@ const TermsPage = () => {
     {
       icon: <FileCheck className="w-6 h-6 text-emerald-500" />,
       title: "Acceptance of Terms",
-      content: `By accessing and using our website (mainecooncattery.com), you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our website or services.
+      content: `By accessing and using our website (tariqsirishwolfhounds.com), you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our website or services.
 
       These terms may be modified at any time, and continued use of our services constitutes acceptance of any modifications.`,
     },
     {
       icon: <Scale className="w-6 h-6 text-emerald-500" />,
       title: "Purchase and Adoption Terms",
-      content: `1. Kitten Reservations:
-      • A non-refundable deposit is required to reserve a Maine Coon kitten
+      content: `1. Puppy Reservations:
+      • A non-refundable deposit is required to reserve an Irish Wolfhound puppy
       • Deposits are applied to the final purchase price
       • Reservation priority is based on deposit receipt date
 
       2. Health Guarantees:
-      • All kittens come with a comprehensive health guarantee
+      • All puppies come with a comprehensive health guarantee
       • Initial veterinary examination must be completed within 72 hours
       • Genetic health guarantees as specified in individual contracts
 
       3. Payment Terms:
-      • Full payment must be received before kitten pickup
+      • Full payment must be received before puppy pickup or delivery
       • Accepted payment methods will be specified
       • Payment plans must be agreed upon in writing`,
     },
@@ -48,13 +48,13 @@ const TermsPage = () => {
       icon: <AlertCircle className="w-6 h-6 text-emerald-500" />,
       title: "Responsibilities and Obligations",
       content: `Buyer Responsibilities:
-      • Provide appropriate care and living conditions for your Maine Coon
+      • Provide appropriate care and living conditions for your Irish Wolfhound
       • Maintain regular veterinary care and vaccinations
       • Follow provided care instructions for proper nutrition and exercise
       • Notify us of any health issues within guarantee period
 
       Our Responsibilities:
-      • Provide healthy, well-socialized Maine Coon kittens
+      • Provide healthy, well-socialized Irish Wolfhound puppies
       • Deliver complete health records and vaccination history
       • Offer ongoing support and guidance for the life of your cat
       • Honor all contractual guarantees as specified`,
@@ -68,7 +68,7 @@ const TermsPage = () => {
       • Transfer to future litters may be possible
 
       2. Health-Related Returns:
-      • Must be documented by licensed veterinarian
+      • Must be documented by a licensed veterinarian
       • Time limits apply as specified in contract
       • Replacement or refund options as per agreement
 
@@ -100,7 +100,7 @@ const TermsPage = () => {
       title: "Timeline and Communication",
       content: `1. Response Times:
       • Inquiries answered within 48 hours
-      • Updates provided weekly for reserved kittens
+      • Updates provided weekly for reserved puppies
       • Emergency contact available for urgent issues
 
       2. Pickup and Delivery:
@@ -109,7 +109,7 @@ const TermsPage = () => {
       • Delays must be communicated promptly
 
       3. Follow-up Communication:
-      • Regular updates requested for kitten progress
+      • Regular updates requested for puppy progress
       • Annual health check documentation
       • Newsletter subscription optional`,
     },
@@ -203,7 +203,7 @@ const TermsPage = () => {
                     </h3>
                     <p className="text-gray-600 text-sm mb-4">
                       Our team is available to clarify any terms or conditions
-                      regarding our Maine Coons.
+                      regarding our Irish Wolfhound puppies.
                     </p>
                     <a
                       href="/contact"
@@ -232,11 +232,11 @@ const TermsPage = () => {
               </div>
               <p className="text-gray-700 leading-relaxed">
                 These Terms and Conditions govern your use of our website and
-                services provided by Maine Coon Cattery. By accessing our
+                services provided by Tariq's Irish Wolfhound Puppies. By accessing our
                 website or utilizing our services, you agree to comply with and
                 be bound by these terms. Please read them carefully before
                 proceeding with any purchase or adoption process related to our
-                Maine Coons.
+                Irish Wolfhounds.
               </p>
               <div className="mt-6 bg-emerald-50 p-4 rounded-lg border border-emerald-100">
                 <div className="flex items-start">
@@ -285,7 +285,7 @@ const TermsPage = () => {
               </p>
               <p>
                 For questions about these terms, please contact us through our
-                designated channels. Maine Coon Cattery reserves all rights not
+                designated channels. Tariq's Irish Wolfhound Puppies reserves all rights not
                 expressly granted in these Terms and Conditions.
               </p>
             </div>
@@ -301,7 +301,7 @@ const TermsPage = () => {
               <div className="flex items-center">
                 <CheckCircle className="w-6 h-6 text-emerald-200 mr-3" />
                 <span className="text-emerald-100">
-                  Thank you for choosing Maine Coon Cattery
+                  Thank you for choosing Tariq's Irish Wolfhound Puppies
                 </span>
               </div>
             </div>

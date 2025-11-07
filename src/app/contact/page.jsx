@@ -134,10 +134,8 @@ function ContactPage() {
               <p className="text-gray-600">Saturday: 10am - 4pm</p>
               <p className="text-gray-600">Sunday: By appointment</p>
             </div>
-          </div>
-        </div>
-      </div>
-
+            </div>
+            </div>
         {/* Contact Form */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Contact Form */}
@@ -364,8 +362,8 @@ function ContactPage() {
               ))}
             </div>
           </div>
-        </div>
       </div>
+    </div>
 
       <Footer />
     </section>

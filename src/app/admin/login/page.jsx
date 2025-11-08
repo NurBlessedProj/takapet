@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
-import { Eye, EyeOff, Lock, User, Cat, AlertCircle } from "lucide-react";
+import { Eye, EyeOff, Lock, User, PawPrint, AlertCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function AdminLoginPage() {
@@ -66,11 +66,11 @@ export default function AdminLoginPage() {
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <div className="bg-emerald-600 p-3 rounded-full">
-              <Cat className="w-8 h-8 text-white" />
+              <PawPrint className="w-8 h-8 text-white" />
             </div>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Maine Coon Cattery
+            Tariq's Irish Wolfhound Puppies
           </h1>
           <p className="text-gray-600">Admin Dashboard Access</p>
         </div>
@@ -82,7 +82,7 @@ export default function AdminLoginPage() {
               Welcome Back
             </h2>
             <p className="text-gray-600">
-              Sign in to manage your Maine Coon cattery
+              Sign in to manage Tariq's Irish Wolfhound Puppies
             </p>
           </div>
 
@@ -175,7 +175,7 @@ export default function AdminLoginPage() {
           {/* Footer */}
           <div className="mt-8 pt-6 border-t border-gray-200">
             <p className="text-center text-sm text-gray-600">
-              Secure access to Maine Coon Cattery admin panel
+              Secure access to Tariq's Irish Wolfhound Puppies admin panel
             </p>
           </div>
         </div>

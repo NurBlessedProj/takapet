@@ -2,17 +2,7 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer.jsx/page";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  MessageCircle,
-  Clock,
-  HelpCircle,
-  Calendar,
-  CheckCircle,
-} from "lucide-react";
+import { Mail, Send, Clock, HelpCircle, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
 function ContactPage() {
@@ -27,6 +17,8 @@ function ContactPage() {
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,27 +28,44 @@ function ContactPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const {
-      firstName,
-      lastName,
-      phoneNumber,
-      email,
-      address,
-      message,
-      interest,
-    } = formData;
-    const mailtoLink = `mailto:contact@mainecooncatery.com?subject=Contact%20Form%20Submission%20-%20${interest}&body=Name:%20${firstName}%20${lastName}%0APhone%20Number:%20${phoneNumber}%0AEmail:%20${email}%0AAddress/State:%20${address}%0AInterest:%20${interest}%0AMessage/Comment:%20${message}`;
-    window.location.href = mailtoLink;
-    setFormSubmitted(true);
-  };
+    setIsSubmitting(true);
+    setError(null);
 
-  const handleWhatsAppClick = () => {
-    // Remove any non-numeric characters and ensure it starts with the country code
-    const phoneNumber = "12105601509"; // Format: countrycode + number without special characters
-    const whatsappUrl = `https://wa.me/${phoneNumber}`;
-    window.open(whatsappUrl, "_blank");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const { error: message } = await response.json();
+        throw new Error(message || "Failed to send message.");
+      }
+
+      setFormSubmitted(true);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        phoneNumber: "",
+        email: "",
+        address: "",
+        message: "",
+        interest: "general",
+      });
+    } catch (err) {
+      console.error("Failed to send contact message:", err);
+      setError(
+        err.message ||
+          "Failed to send message. Please try again or contact us directly."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const faqs = [
@@ -115,7 +124,7 @@ function ContactPage() {
             </div>
             <div>
               <h3 className="font-semibold text-lg text-gray-800">Email</h3>
-              <p className="text-gray-600">contact@tariqsirishwolfhounds.com</p>
+              <p className="text-gray-600">tariqsirishwolfhounds@gmail.com</p>
               <p className="text-sm text-gray-500 mt-2">
                 We respond within 24-48 hours
               </p>
@@ -183,6 +192,11 @@ function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                    {error}
+                  </div>
+                )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label
@@ -318,11 +332,21 @@ function ContactPage() {
                 <div className="text-center pt-4">
                   <button
                     type="submit"
+                    disabled={isSubmitting}
                     className="inline-flex items-center justify-center px-8 py-3 bg-amber-600 text-white font-semibold rounded-full
-                      hover:bg-amber-700 focus:ring-4 focus:ring-amber-300 transition-colors duration-300"
+                      hover:bg-amber-700 focus:ring-4 focus:ring-amber-300 transition-colors duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <Send className="w-5 h-5 mr-2" />
-                    Send Message
+                    {isSubmitting ? (
+                      <>
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5 mr-2" />
+                        Send Message
+                      </>
+                    )}
                   </button>
                 </div>
               </form>

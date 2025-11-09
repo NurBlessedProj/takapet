@@ -78,10 +78,10 @@ function Footer() {
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-400" />
                 <Link
-                  href="mailto:contact@tariqsirishwolfhounds.com"
+                  href="mailto:tariqsirishwolfhounds@gmail.com"
                   className="text-gray-300 hover:text-emerald-300 transition-colors"
                 >
-                  contact@tariqsirishwolfhounds.com
+                  tariqsirishwolfhounds@gmail.com
                 </Link>
               </li>
             </ul>

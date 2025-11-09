@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         {/* Google tag (gtag.js) */}
 
         {/* Tawk.to Live Chat Script */}
-        {/* <script
+        <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -83,14 +83,14 @@ export default function RootLayout({ children }) {
               (function(){
               var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
               s1.async=true;
-              s1.src='https://embed.tawk.to/68c551414a173719262aaa9b/1j51car05';
+              s1.src='https://embed.tawk.to/69103b79ee2732195b2fb9a1/1j9jmgllo';
               s1.charset='UTF-8';
               s1.setAttribute('crossorigin','*');
               s0.parentNode.insertBefore(s1,s0);
               })();
             `,
           }}
-        /> */}
+        />
 
         {/* Theme color meta tag for mobile browsers */}
         <meta name="theme-color" content="#059669" />

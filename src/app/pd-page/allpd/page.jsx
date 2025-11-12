@@ -382,6 +382,7 @@ function Page() {
                                   })
                                 }
                                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                required
                               />
                             </div>
 
@@ -399,6 +400,7 @@ function Page() {
                                     })
                                   }
                                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                  required
                                 >
                                   <option value="Male">Male</option>
                                   <option value="Female">Female</option>
@@ -418,6 +420,7 @@ function Page() {
                                     })
                                   }
                                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                  required
                                 />
                               </div>
                             </div>
@@ -437,6 +440,7 @@ function Page() {
                                     })
                                   }
                                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                  required
                                 />
                               </div>
                               <div>
@@ -452,6 +456,7 @@ function Page() {
                                     })
                                   }
                                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                  required
                                 >
                                   <option value="Available">Available</option>
                                   <option value="Reserved">Reserved</option>
@@ -480,6 +485,7 @@ function Page() {
                                     })
                                   }
                                   className="w-full pl-7 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                  required
                                 />
                               </div>
                             </div>
@@ -498,6 +504,7 @@ function Page() {
                                 }
                                 rows={3}
                                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                required
                               />
                             </div>
 
